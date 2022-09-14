@@ -37,7 +37,7 @@ const loader = new THREE.GLTFLoader();
 class Doll {
     constructor() {
         loader.load(
-            'models/scene.gltf', (params) => {
+            'https://freelanceweb16.github.io/Code-a-Squid-Game-JavaScript-Game-Using-Three.js/models/scene.gltf', (params) => {
                 scene.add(params.scene);
                 params.scene.scale.set(0.4, 0.4, 0.4);
                 params.scene.position.set(0, -1, 0);
@@ -114,7 +114,7 @@ class Player{
 function youLoose(){
     if(gameStat == "over") return
     const source = document.getElementById('audioSource');
-    source.src = 'misc/Youloose.mp3';
+    source.src = 'https://freelanceweb16.github.io/Code-a-Squid-Game-JavaScript-Game-Using-Three.js/misc/Youloose.mp3';
   
     audio.load(); //call this to just preload the audio without playing
     audio.play(); //call this to play the song right away
